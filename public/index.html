@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div id="app_ctn">
+        <div id="team_ctn">
+            <span id="team_span"></span>
+        </div>
+        <div id="amount_ctn">
+            <span id="amount_span">100000</span>
+        </div>
+        <form id="form_send_ctn" class="form_ctn">
+            <select id="select_btn" name="receiver">
+                <option value="choose_target" selected disabled>Choose target</option>
+                <option value="bank">Bank</option>
+            </select>
+            <input type="text" name="amount" pattern="[0-9]*">
+            <input type="submit" id="send_btn" value="Send money"></input>
+        </form>
+        <form id="form_receive_ctn" class="form_ctn">
+            <input type="text" name="amount" pattern="[0-9]*">
+            <input type="submit" id="receive_btn" value="Receive money"></input>
+        </form>
+    </div>
+</body>
+
+</html>

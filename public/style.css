@@ -1,0 +1,44 @@
+body {
+    font-family: 'garamond';
+}
+
+#app_ctn {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#team_span {
+    font-size: 5rem;
+}
+
+#amount_span {
+    font-size: 10rem;
+}
+
+.form_ctn {
+    display: flex;
+    flex-direction: row;
+}
+
+.form_ctn>* {
+    margin: 5px;
+    padding: 10px 15px 10px 15px;
+}
+
+@media (max-width: 800px) {
+    #team_span {
+        font-size: 4rem;
+    }
+
+    #amount_span {
+        font-size: 5rem;
+    }
+
+    .form_ctn {
+        flex-direction: column;
+    }
+}
